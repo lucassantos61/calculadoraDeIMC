@@ -4,11 +4,11 @@
     "authors": [
         {
             "name": "Lucas Ferreira dos santos",
-            "email": "lucasferreira241@gmai.com"
+            "email": "lucasferreira241@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.4"
+        "php": ">=7.0.0"
     },
     "autoload":{
         "psr-4": {

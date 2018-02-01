@@ -14,8 +14,7 @@ __Requisitos do Sistema__
 __Instalação__
 
 Realize o clone do projeto em sua máquina.
-```git 
- clone git@github.com:lucassantos61/calculadoraDeIMC.git
+```git clone git@github.com:lucassantos61/calculadoraDeIMC.git
  ```
 Execute dentro da pasta do projeto o seguinte comando via terminal:
 
