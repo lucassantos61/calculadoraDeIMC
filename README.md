@@ -17,7 +17,7 @@ Realize o clone do projeto em sua máquina.
 ```git 
  clone git@github.com:lucassantos61/calculadoraDeIMC.git
  ```
-Execute o seguinte comando via terminal:
+Execute dentro da pasta do projeto o seguinte comando via terminal:
 
 ```php
 composer install
@@ -25,7 +25,7 @@ composer install
 
 __Executando o Sistema__
 
-Via terminal execute o seguinte comando, sendo:
+Via terminal execute dentro da pasta do projeto o seguinte comando, sendo:
 
 ```php
 composer server
