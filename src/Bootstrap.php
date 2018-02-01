@@ -1,9 +1,11 @@
 <?php
 namespace lucassantos;
 
-class Bootstrap {
+class Bootstrap 
+{
     private $view;
-    public function __construct($view){
+    public function __construct($view)
+    {
         $fileView = "./public/".$view.".php";
         if(file_exists($fileView)){
             $this->view = file_get_contents($fileView);
@@ -11,10 +13,11 @@ class Bootstrap {
 
     }
 
-    public function renderView(array $data){
+    public function renderView(array $data)
+    {
         foreach($data as $key => $value){
             $this->view = str_replace('{'.$key.'}', $value, $this->view);
         }
-        echo $this->view;
+        return $this->view;
     }
 }

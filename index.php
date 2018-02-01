@@ -13,4 +13,4 @@ $imc = new IMC();
 $data = ["RESULT" => $imc->calculaIMC($weight, $height)];
 
 $render = new Bootstrap("formulario");
-$render->renderView($data);
+echo $render->renderView($data);
