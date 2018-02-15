@@ -12,7 +12,7 @@ namespace lucassantos;
 class IMC
 {    
    /**
-    * calculaIMC())
+    * CalculaIMC())
     * 
     * Calcula o IMC com base no peso e altura
     * 
@@ -23,7 +23,7 @@ class IMC
 
     public function calculaIMC(float $weight ,float $height):String
     {
-        if($weight && $height){
+        if ($weight && $height) {
             $imc = round($weight/($height * $height),2);
             return $this->analiseIMC($imc);
         }
@@ -40,17 +40,17 @@ class IMC
 
     private function analiseIMC($imc):String
     {
-        if($imc <= 17){
+        if ($imc <= 17) {
             return "Muito abaixo do peso seu imc é ".$imc;
-        } else if($imc <= 18.49){
+        } else if ($imc <= 18.49) {
             return "Abaixo do peso seu imc é ".$imc;
-        } else if($imc <= 24.99){
+        } else if ($imc <= 24.99) {
             return "Peso normal seu imc é ".$imc;
-        } else if($imc <= 29.99){
+        } else if ($imc <= 29.99) {
             return "Acima do peso seu imc é ".$imc;
-        } else if($imc <= 34.99){
+        } else if ($imc <= 34.99) {
             return "Obesidade I seu imc é ".$imc;
-        } else if($imc <= 39.99){
+        } else if ($imc <= 39.99) {
             return "Obesidade II (severa) seu imc é ".$imc;
         } 
         return "Obesidade III (mórbida) seu imc é ".$imc;
